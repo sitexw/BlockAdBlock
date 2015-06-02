@@ -1,7 +1,9 @@
 /*
-BlockAdBlock 3.1.0
-http://github.com/sitexw/BlockAdBlock
-*/
+ * BlockAdBlock 3.1.1
+ * Copyright (c) 2015 Valentin Allaire <valentin.allaire@sitexw.fr>
+ * Released under the MIT license
+ * https://github.com/sitexw/BlockAdBlock
+ */
 
 (function(window) {
 	var BlockAdBlock = function(options) {
@@ -14,7 +16,7 @@ http://github.com/sitexw/BlockAdBlock
 			baitStyle:			'width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;'
 		};
 		this._var = {
-			version:			'3.1.0',
+			version:			'3.1.1',
 			bait:				null,
 			checking:			false,
 			loop:				null,
