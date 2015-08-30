@@ -1,4 +1,4 @@
-BlockAdBlock (v3.1.1)
+BlockAdBlock (v3.2.0)
 ===========
 
 ([FuckAdBlock](https://github.com/sitexw/FuckAdBlock) same project but with a more convenient name)
@@ -59,9 +59,10 @@ if(typeof blockAdBlock === 'undefined') {
 }
 
 // Change the options
-blockAdBlock.setOptions('checkOnLoad', false);
+blockAdBlock.setOption('checkOnLoad', false);
 // and|or
-blockAdBlock.setOptions({
+blockAdBlock.setOption({
+	debug: true,
 	checkOnLoad: false,
 	resetOnEnd: false
 });
@@ -89,6 +90,9 @@ baitClass: 'pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads 
 
 // CSS style used to hide the bait of the users
 baitStyle: 'width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;'
+
+// Displays the debug in the console (available only from version 3.2 and more)
+debug: false
 ```
 
 Method available
