@@ -60,8 +60,8 @@
 			</div>
 			<div class="col-sm-7">
 				<h3 class="text-left">Publicity example<button class="btn btn-primary btn-xs pull-right" onclick="checkAgain();">Check again</button></h3>
-				<h5 class="bg-success" id="fuck-adb-not-enabled" style="display: none;">AdBlock is not enabled</h5>
-				<h5 class="bg-danger" id="fuck-adb-enabled" style="display: none;">AdBlock is enabled</h5>
+				<h5 class="bg-success" id="block-adb-not-enabled" style="display: none;">AdBlock is not enabled</h5>
+				<h5 class="bg-danger" id="block-adb-enabled" style="display: none;">AdBlock is enabled</h5>
 			</div>
 		</div>
 		<div class="row">
@@ -78,7 +78,7 @@
 				<p>Manual:</p>
 				<pre>Download "blockadblock.js" and add it to your website.</pre>
 				<p>Bower:</p>
-				<pre>bower install fuck-adblock</pre>
+				<pre>bower install blockadblock</pre>
 				<p>Node.js/io.js:</p>
 				<pre>npm install blockadblock</pre>
 				<h3 class="text-left">Code example</h3>
@@ -189,12 +189,12 @@ myBlockAdBlock = new BlockAdBlock({
 	<script src="./blockadblock.js"></script>
 	<script>
 		function adBlockDetected() {
-			$('#fuck-adb-enabled').show();
-			$('#fuck-adb-not-enabled').hide();
+			$('#block-adb-enabled').show();
+			$('#block-adb-not-enabled').hide();
 		}
 		function adBlockNotDetected() {
-			$('#fuck-adb-enabled').hide();
-			$('#fuck-adb-not-enabled').show();
+			$('#block-adb-enabled').hide();
+			$('#block-adb-not-enabled').show();
 		}
 		
 		if(typeof blockAdBlock === 'undefined') {
@@ -205,8 +205,8 @@ myBlockAdBlock = new BlockAdBlock({
 		}
 		
 		function checkAgain() {
-			$('#fuck-adb-enabled').hide();
-			$('#fuck-adb-not-enabled').hide();
+			$('#block-adb-enabled').hide();
+			$('#block-adb-not-enabled').hide();
 			// setTimeout 300ms for the recheck is visible when you click on the button
 			setTimeout(function() {
 				if(typeof blockAdBlock === 'undefined') {
