@@ -1,5 +1,5 @@
 /*
- * BlockAdBlock 3.2.0
+ * BlockAdBlock 3.2.1
  * Copyright (c) 2015 Valentin Allaire <valentin.allaire@sitexw.fr>
  * Released under the MIT license
  * https://github.com/sitexw/BlockAdBlock
@@ -17,7 +17,7 @@
 			debug:				false
 		};
 		this._var = {
-			version:			'3.2.0',
+			version:			'3.2.1',
 			bait:				null,
 			checking:			false,
 			loop:				null,
@@ -155,8 +155,7 @@
 		}
 		if(window.getComputedStyle !== undefined) {
 			var baitTemp = window.getComputedStyle(this._var.bait, null);
-			if(baitTemp.getPropertyValue('display') == 'none'
-			|| baitTemp.getPropertyValue('visibility') == 'hidden') {
+			if(baitTemp && (baitTemp.getPropertyValue('display') == 'none' || baitTemp.getPropertyValue('visibility') == 'hidden')) {
 				detected = true;
 			}
 		}
