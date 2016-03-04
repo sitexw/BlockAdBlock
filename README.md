@@ -1,4 +1,4 @@
-BlockAdBlock (v3.2.0)
+BlockAdBlock (v3.2.1)
 ===========
 
 ([FuckAdBlock](https://github.com/sitexw/FuckAdBlock) same project but with a more convenient name)
